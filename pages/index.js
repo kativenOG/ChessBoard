@@ -17,8 +17,8 @@ export default function Home() {
 
     if(i<9 && i>0)  squareList[i]= <EmptyTile dir={1}/>
     else if( (i+1)%10==0 && i!=9 && i!=99 ) squareList[i] = <EmptyTile dir={0}/>
-    else if( i%10 == 0 || i==9 ) squareList[i] = <OutsideV content={ver[(i/10)-1]}/> 
-    else if(i>90)  squareList[i]= <OutsideH content={oriz[i-91]}/>
+    else if( i%10 == 0 || i==9 ) squareList[i] = <OutsideV content={ver[(i/10)-1]} i={i}/>
+    else if(i>90)  squareList[i]= <OutsideH content={oriz[i-91]} i={i}/>
     else {
       if(inverse%8!=0) counter= !counter
       squareList[i] = <Tessera color={counter}/>
@@ -34,8 +34,8 @@ export default function Home() {
         <link rel="icon" href="/public/favicon.ico" />
     </Head>
     
-    <div className="flex items-center justify-center bg-zinc-200 h-full w-full">
-      <div className="grid grid-cols-10">
+    <div className="flex items-center justify-center h-full w-full bg-zinc-300">
+      <div className="grid grid-cols-10 ">
         {squareList}
       </div>
     </div> 
