@@ -6,7 +6,7 @@ function ActorPawn({actor}) {
     <div className='bg-zinc-200'>
       <Draggable>
           <div>
-            <Image src={actor} width={50} height={50} className="rounded-full" />
+            <Image rel="actor" src={actor} width={50} height={50} className="rounded-full" />
         </div>
       </Draggable>    
     </div>

@@ -1,8 +1,7 @@
-import Image from "next/image"
 function Tessera({color}) {
   return (
     <>
-      {(color%3==0) ?
+      {(color) ?
         <div className="flex justify-center items-center h-16 w-16  bg-white" /> : 
         <div className="flex justify-center items-center h-16 w-16  bg-black" />  
       }

@@ -6,7 +6,7 @@ export default function draggable() {
     return (
         <Draggable>
             <div>
-                <Image src="/actor1.jpg" width={50} height={50}/>
+                <Image rel="actor" src="/actor1.jpg" width={50} height={50}/>
             </div>
         </Draggable>
     )
