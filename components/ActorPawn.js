@@ -1,16 +1,13 @@
-import Draggable from 'react-draggable'
 import Image from "next/image"
+import Draggable from "react-draggable"
 
 function ActorPawn({actor}) {
   return (
-    <div className='bg-zinc-200'>
-      <Draggable>
-          <div>
-            <Image rel="actor" src={actor} width={50} height={50} className="rounded-full" />
-        </div>
-      </Draggable>    
-    </div>
+    <Draggable>
+        <div className="">
+          <Image rel="actor" src={actor} width={55} height={55} className="rounded-full" /> 
+      </div>
+    </Draggable>
   )
 }
-
 export default ActorPawn

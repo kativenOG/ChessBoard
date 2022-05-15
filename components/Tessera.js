@@ -1,9 +1,15 @@
-function Tessera({color}) {
+import ActorPawn from "./ActorPawn"
+
+function Tessera({color,actors}) {
   return (
     <>
       {(color) ?
-        <div className="flex justify-center items-center h-18 w-18  bg-white" /> : 
-        <div className="flex justify-center items-center h-18 w-18  bg-black" />  
+        <div className="flex justify-center items-center h-16 w-16  bg-white"> 
+
+        </div>
+        : <div className="flex justify-center items-center h-16 w-16  bg-black">
+
+        </div>  
       }
     </>
   )
