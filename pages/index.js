@@ -8,17 +8,6 @@ import ActorPawn from '../components/ActorPawn'
 
 export default function Home() {
 
-  const [selected,chooseSelected] = useState(0)
-
-  const [actors,setactor] =  useState(
-    [ 
-      <ActorPawn actor="/actor1.jpg"/>, <ActorPawn actor="/actor2.jpg"/>,
-      <ActorPawn actor="/actor3.jpg"/>, <ActorPawn actor="/actor4.jpg"/>,
-      <ActorPawn actor="/actor5.jpg"/>, <ActorPawn actor="/actor6.jpg"/>,
-      <ActorPawn actor="/actor7.jpg"/>
-    ]
-  )
-
   let oriz= ["A","B","C","D","E","F","G","H"]
   let ver= ["1","2","3","4","5","6","7","8"]
   let counter = true  
