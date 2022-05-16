@@ -30,7 +30,7 @@ export default function Home() {
   return (
   <div className="h-screen w-screen">
     <Head>
-        <title>SognoSonFesso</title>
+        <title>SognoSonDesto</title>
         <link rel="icon" href="/public/favicon.ico" />
     </Head>
     
